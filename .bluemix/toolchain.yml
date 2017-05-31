@@ -1,0 +1,8 @@
+---
+name: "All Tools in Toolchain"
+description: "This toolchain will be used in System Test.\n Click CREATE to start."
+version: 0.1
+
+#OtherTool
+othertool:
+  service_id: customtool
