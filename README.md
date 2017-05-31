@@ -1,0 +1,2 @@
+# anotherToolTemplate
+SetupAnotherTool
