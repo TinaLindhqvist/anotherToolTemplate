@@ -10,3 +10,12 @@ webide:
 #OtherTool
 othertool:
   service_id: customtool
+  parameters:
+    type: ToDo
+    imageUrl: http://atesttool.mybluemix.net/todoIcon_UItest.png
+    documentationUrl: http://atesttool.mybluemix.net/doc.html
+    name: Trello
+    dashboard_url: https://trello.com/b/lc47OTPt/test-sprint
+    description: TODO Lists!
+    lifecyclePhase: THINK
+    additional-properties
