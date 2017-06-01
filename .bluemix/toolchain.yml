@@ -1,7 +1,9 @@
 ---
-name: "All Tools in Toolchain"
+name: "A Toolchain with a custom tool"
 description: "This toolchain will be used in System Test.\n Click CREATE to start."
-version: 0.1
+version: '2'
+required:
+  - othertool
 
 #Web IDE
 webide:
