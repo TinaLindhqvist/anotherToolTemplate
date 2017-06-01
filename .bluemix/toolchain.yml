@@ -1,22 +1,21 @@
----
-name: "A Toolchain with a custom tool"
-description: "This toolchain will be used in System Test.\n Click CREATE to start."
 version: '2'
-required:
-  - othertool
+template:
+  name: "A Toolchain with a custom tool"
+  description: "This toolchain will be used in System Test.\n Click CREATE to start."
+toolchain:
+  name: 'anotherToolTemplate-{{timestamp}}'
 
-#Web IDE
-webide:
-  service_id: orion
+services:
+  webide:
+    service_id: orion
 
-#OtherTool
-othertool:
-  service_id: customtool
-  parameters:
-    name: 'Trello'
-    description: 'TODO Lists'
-    type: 'ToDo'
-    lifecyclePhase: THINK
-    imageUrl: 'http://atesttool.mybluemix.net/todoIcon_UItest.png'
-    documentationUrl: 'http://atesttool.mybluemix.net/doc.html'
-    dashboard_url: 'https://trello.com/b/lc47OTPt/test-sprint'
+  othertool:
+    service_id: customtool
+    parameters:
+      name: 'Trello'
+      description: 'TODO Lists'
+      type: 'ToDo'
+      lifecyclePhase: THINK
+      imageUrl: 'http://atesttool.mybluemix.net/todoIcon_UItest.png'
+      documentationUrl: 'http://atesttool.mybluemix.net/doc.html'
+      dashboard_url: 'https://trello.com/b/lc47OTPt/test-sprint'
