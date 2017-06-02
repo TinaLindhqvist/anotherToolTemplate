@@ -2,9 +2,14 @@ version: '2'
 template:
   name: "A Toolchain with a custom tool"
   description: "This toolchain will be used in System Test.\n Click CREATE to start."
+  info:
+    git url: [https://github.com/TinaLindhqvist/anotherToolTemplate](https://github.com/TinaLindhqvist/anotherToolTemplate)
+    
 toolchain:
   name: 'anotherToolTemplate-{{timestamp}}'
-
+  template:
+    getting_started: "Getting Started Text"
+    
 services:
   webide:
     service_id: orion
@@ -15,7 +20,7 @@ services:
       name: 'Trello'
       description: 'TODO Lists'
       type: 'ToDo'
-      lifecyclePhase: THINK
+      lifecyclePhase: 'THINK'
       imageUrl: 'http://atesttool.mybluemix.net/todoIcon_UItest.png'
       documentationUrl: 'http://atesttool.mybluemix.net/doc.html'
       dashboard_url: 'https://trello.com/b/lc47OTPt/test-sprint'
