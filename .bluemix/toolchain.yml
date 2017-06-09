@@ -12,6 +12,14 @@ toolchain:
   template:
     getting_started: "Getting Started Text"
 services:
+  sample-repo:
+    service_id: hostedgit
+    parameters:
+      repo_name: '{{toolchain.name}}'
+      repo_url: 'https://git-integration.stage1.ng.bluemix.net/bluemix_ui_load175tc/aPublicRepo2Link2'
+      type: existing
+      has_issues: false
+      enable_traceability: false
   othertool:
     service_id: customtool
     parameters:
