@@ -11,10 +11,6 @@ toolchain:
   name: 'anotherToolTemplate-{{timestamp}}'
   template:
     getting_started: "Getting Started Text"
-    
-services:
-  webide:
-    service_id: orion
 
   othertool:
     service_id: customtool
