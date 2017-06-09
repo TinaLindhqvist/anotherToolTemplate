@@ -11,7 +11,7 @@ toolchain:
   name: 'anotherToolTemplate-{{timestamp}}'
   template:
     getting_started: "Getting Started Text"
-
+services:
   othertool:
     service_id: customtool
     parameters:
